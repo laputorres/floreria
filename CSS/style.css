@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Benne&family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Benne', serif;
+
+}
+
+body {
+    font-family: 'Benne', serif;
+    background: #ede8e2;
+    
+    height: 100vh;
+    
+
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: #dbc7b1;
+}
+
+h2 {
+    text-align: center;
+    
+}
+
+h2 i {
+    font-family: 'MonteCarlo', cursive;
+    font-size: 260%;
+    color: #af9e8b;
+    margin-top: -30px;
+}
+
+
+/* BARRA DE MENU */
+
+header .navbar {
+    background: #dbc7b1 !important;
+    
+}
+
+.navbar a{
+    color: #fff !important;
+}
+
+
+
+.navbar img {
+    width: 30%;
+    margin-left: 10%;
+}
+
+.grid {
+    background-color: #fff;
+    height: 80vh !important;
+    width: 90%;
+    max-width: 90%;
+    margin: auto;
+    box-shadow: 0 0 30px -10px #000;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    overflow: hidden;   
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: right top;
+
+    
+}
+
+.grid button{
+    grid-row: 1/8;
+    grid-column: 7/8;
+    width: 10%;
+    margin: auto;
+    margin-top: 5% ;
+    margin-left: 40%;
+    z-index: 3;
+}
+
+.grid::before {
+    content: "";
+    grid-column: 5  /-1;
+    grid-row: 1/-1;
+    background-image: url(../img/flower-watercolor-png.png);
+    background-position: left top;
+
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.grid__texts {
+    grid-row: 2/-2;
+    grid-column: 1/8;
+    display: flex;
+    z-index: 1;
+    margin-right: 25vh;
+    flex-direction: column;
+    justify-content:flex-start;
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+    transform: translate(50%);
+    animation: show 2s forwards, move 1s 2s forwards;
+    
+}
+
+.grid__title {
+    font-size: 8rem;
+    margin-right: 25vh;
+    color: #807264;
+    font-family: 'MonteCarlo', cursive;
+}
+
+.grid__title--transform {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    transform: translate(20%);
+    animation: move 1s 2s forwards;
+
+}
+
+@keyframes show {
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+    }
+}
+
+@keyframes move {
+    to {
+        transform: translate(0);
+    }
+}
+
+/* PRODUCTOS */
+.productos{
+    margin-top: 0px;
+}
+
+
+.productos h2{
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 1px;
+}
+
+
+.profile-card-6 {
+    max-width: 300px;
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.profile-card-6 img {
+    transition: all 0.15s linear;
+}
+
+.profile-card-6 .profile-name {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color:#b6a695;
+    padding: 15px 20px;
+    /* background: linear-gradient(140deg, rgba(15, 15, 15, 0.4) 50%, rgba(255, 255, 254, 0) 10%);
+     */transition: all 0.15s linear;
+}
+
+.profile-card-6 .profile-position {
+    position: absolute;
+    color: #fff;
+    left: 30px;
+    top: 100px;
+    transition: all 0.15s linear;
+}
+
+.profile-card-6 .profile-overview {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: linear-gradient(0deg, rgba(219, 199, 177, 0.473) 50%, rgba(219, 199, 177, 0));
+    color: #FFF;
+    padding: 50px 0px 20px 0px;
+    transition: all 0.15s linear;
+}
+
+.profile-card-6 .profile-overview h3 {
+    font-weight: bold;
+}
+
+.profile-card-6 .profile-overview p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.profile-card-6:hover img {
+    filter: brightness(80%);
+}
+
+.profile-card-6:hover .profile-name {
+    padding-left: 25px;
+    padding-top: 20px;
+}
+
+.profile-card-6:hover .profile-position {
+    left: 40px;
+}
+
+.profile-card-6:hover .profile-overview {
+    padding-bottom: 25px;
+}
+
+.about{
+    background: #dbc7b1;
+    background-image: url(../img/fondo-flores.png);
+    background-repeat: no-repeat;
+    background-position: center,top;
+    background-size:contain;
+    height: 100vh;
+    
+    
+}
+
+.about_row{
+    width: 90%;
+    margin: auto;   
+    background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 8px );
+-webkit-backdrop-filter: blur( 1.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+animation-name: imagen;
+animation-duration: 3s;
+}
+
+.about_row h2{
+    margin: 10vh;
+    
+}
+
+.about_row h2 i {
+    color: #fff;
+}
+
+.about_icons{
+    display: flex;
+}
+
+.about_content-descrition{
+    padding: 0 5%;
+    font-size: 5vh;
+    width: 100%;
+    color: rgb(73, 69, 69);
+}
+
+.about_icons-text{
+    width: 30%;
+    color: rgb(73, 69, 69);
+    text-align: center;
+    font-size: large;
+    margin: auto;
+}
+
+.about_icons-text img{
+    width: 15%;
+    margin-bottom: 5vh;
+  
+}
+
+/* CONTACTANOS */
+
+.contacto {
+   margin-top: 5%;
+   margin-left: 10%;
+}
+
+.contacto h2{
+    margin: 5% 0;
+}
+
+.formulario{
+ border: solid #dbc7b1;
+ padding: 5%;
+}
+
+.contactanos_redes{
+    margin: auto;
+    font-size: 5vh;
+    color: #dbc7b1;
+    
+}
+
+
+
+.contactanos_redes .row .contactanos_redes-img img{
+    width: 450px ;
+    animation-name: imagen;
+    animation-duration: 2s;
+}
+
+@keyframes imagen{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+
+form .btn{
+    margin:10% 40% 0 40%;
+    background: #b6a695;
+    border: none;
+    
+}
+
+form .btn:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+form input{
+    border-color: #b6a695 !important;
+}
+
+form input:focus{
+    outline: none;
+box-shadow: none;
+}
+
+form h3{
+    text-align: center;
+    color:#b6a695;
+}
+
+/* FOOTER */
+
+
+footer {
+    background: #dbc7b1;
+    
+}
+footer .contactanos_redes-text{
+    
+    text-align: center;
+    /* display: flex; */
+    width: 100%;
+    }
+    
+.contactanos_redes .contactanos_redes-text img {
+        margin: 10%;
+    }
+
+footer .autor{
+        text-align: right;
+    }
+
+footer .contactanos_redes-text p{
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+/* RESPONSIVE DESIGN */
+
+@media only screen and (max-width:600px)  {
+    .grid{
+        display: flex;
+        background-position: center;
+        background: url(../img/flower-watercolor-png.png);
+    }
+
+    .grid button{
+        width: 20%;
+    }
+
+
+    .about{
+        height: 120%;
+    }
+
+    .about_icons{
+        display: flex;
+    }
+
+    .about_content{
+        display: block;
+    }
+    .about_content-descrition{
+        width: 100% !important;
+        text-align:justify;
+    }
+
+    .about_icons-text{
+        width: 100%;
+        
+        text-align: center;
+    }
+
+    .contactanos_redes{
+        margin: 0;
+        font-size: large;
+    }
+
+    .contactanos_redes .row .contactanos_redes-img img {
+        display: none;
+    }
+
+}

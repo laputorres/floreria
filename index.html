@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <title>La Floreria</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar justify-content-center navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand flex-grow-1 " href="#"><img src="./img/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav text-uppercase">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link" href="#sobre-nosotros">sobre nosotros</a>
+                        <a class="nav-link" href="#">contáctenos</a>
+                        <a class="nav-link" href="./products.html">nuestros productos</a>
+                    </div>
+                </div>
+                <div class="redes_sociales collapse navbar-collapse">
+                    <img src="./img/icons/facebook.png" alt="" style="width: 20px;">
+                    <img src="./img/icons/instagram.png" alt="" style="width: 20px;">
+                    <img src="./img/icons/whatsapp.png" alt="" style="width: 20px;">
+                </div>
+            </div>
+
+        </nav>
+
+
+        <section class="grid">
+            <div class="grid__texts">
+                <h2 class="grid__title">Regala Flores!!</h2>
+                <h2 class="grid__title grid__title--transform">Envios a Domicilio</h2>
+                <button type="button" class="btn"><a href="#productos"><img style="width: 100%;"
+                            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQ2Ljk4NCA0Ni45ODQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGc+CgkJPHBhdGggZD0iTTcuMTM4LDI0LjI5MWMtMy43NTEsMS44MTQsNC44NTUsOS45NDQsNS45MiwxMS4yNzFjMi4yNCwyLjc4OCw0LjQ3OSw1LjU3NSw2LjcxOSw4LjM2MiAgICBjMC44NDEsMS4wNDcsMi4wMDIsMy4xNzYsMy42NDksMy4wNTVjMS42MTItMC4xMTksMi40NTYtMS41ODgsMy4zNDQtMi42OTVjMi4zNzMtMi45NTMsNC43NDYtNS45MDcsNy4xMi04Ljg1OSAgICBjMS42MjMtMi4wMiwzLjI0Ni00LjAzOSw0Ljg2OS02LjA2YzAuNDkzLTAuNjE0LDEuOS0xLjc4LDEuOTk5LTIuNjRjMC40Ny00LjA2NS01LjAwNi0yLjg5Mi03Ljk1Mi0yLjc4NCAgICBjLTEuMzkzLTEuMjYxLDEuOTE5LTE2LjUyLDIuMjAzLTE4LjU0M2MwLjEzNi0wLjk3LDEuMDM2LTMuODk5LTAuMTAxLTQuNjg5Yy0xLjU2My0xLjA4Ni00LjA2NS0wLjYwMi01LjgyMy0wLjYwMiAgICBjLTMuNjYxLDAtNy4zMjMsMC0xMC45ODQsMGMtMS44MjMsMC00LjMtMC40ODUtNS44ODksMC43MTZjLTEuMTQ1LDAuODY2LTAuNDQxLDMuMTIyLTAuMjg2LDQuMjI1ICAgIGMwLjU0LDMuODUyLDEuMDgyLDcuNzAyLDEuNjIyLDExLjU1NGMwLjM0LDIuNDI2LDAuNjgxLDQuODUxLDEuMDIxLDcuMjc2QzE0LjU2NCwyMy44MzQsOC4xNzYsMjMuNzg5LDcuMTM4LDI0LjI5MXogTTkuOTYsMjguNjUzICAgIGMtMC4xMzUtMC4xNjctMC4yNy0wLjMzNS0wLjQwNC0wLjUwM2MtMi41NzMtMy4yMDItMC4yNC0yLjk2OCwyLjQtMi43NzdjLTAuMDQxLDAuMDUtMC4wOTIsMC4wOTUtMC4xMjQsMC4xNDYgICAgYy0wLjYxMSwwLjk5NC0xLjIxOCwxLjk4OS0xLjgxNywyLjk5QzkuOTksMjguNTUyLDkuOTgsMjguNjA1LDkuOTYsMjguNjUzeiBNMTguMzc1LDM4Ljg4OWMtMC4wMzMsMC4wNDQtMC4wNDgsMC4wOTctMC4wNzQsMC4xNDUgICAgYy0wLjE1LTAuMTg2LTAuMy0wLjM3Mi0wLjQ0OS0wLjU1OWMwLjAyNC0wLjAzNCwwLjA1Ni0wLjA1MywwLjA3Ny0wLjA5M2MwLjUzOS0wLjk5OSwxLjA4NC0xLjk5NiwxLjYzOS0yLjk4NyAgICBjMy45MzgtNS45NTUsNy44NTYtMTEuOTIzLDExLjgwMy0xNy44NzVjLTAuMDQyLDAuMzAzLTAuMDg2LDAuNjA0LTAuMTI4LDAuOTA5Yy0wLjI2NSwwLjU1OC0wLjUxOCwxLjEyMi0wLjc5NSwxLjY3MyAgICBDMjYuODI2LDI2LjIzMywyMy4wODQsMzIuMjksMTguOTYxLDM4LjFDMTguNzY3LDM4LjM2MywxOC41NzEsMzguNjI1LDE4LjM3NSwzOC44ODl6IE0zNS40NTIsMjcuODY1ICAgIGMtMC4zNjIsMS4wMzItMC43MjksMi4wNjItMS4wOTYsMy4wOTFjLTAuMTg1LDAuNTIxLTAuNTcyLDEuMzIzLTAuODY4LDEuNzg5Yy0wLjY4MSwxLjA3MS0xLjM4OSwyLjE0NC0yLjExLDMuMjExICAgIGMtMC40NzQsMC41ODktMC45NDcsMS4xNzktMS40MiwxLjc2OGMxLjMyNi0yLjU0NSwyLjY2OC01LjA4Myw0LjA1NC03LjYwNGMwLjQyNy0wLjc3NCwwLjg1Ni0xLjU1MSwxLjI4NS0yLjMyNiAgICBDMzUuNTYyLDI3LjMxMiwzNS42MzMsMjcuMzQ0LDM1LjQ1MiwyNy44NjV6IE0zNC4zMjEsMjUuMzIxYy0wLjA2MiwwLjA2OS0wLjEzLDAuMTM2LTAuMTczLDAuMjExICAgIGMtMy43MzcsNi40MDktNy4zOSwxMi44NjgtMTAuOTc2LDE5LjM2N2MtMC4wMDYsMC4wMTEtMC4wMDgsMC4wMjMtMC4wMTQsMC4wMzRjLTAuMTY5LTAuMTE4LTAuMzQ5LTAuMjktMC41NDQtMC41MzIgICAgYy0xLjA4LTEuMzQ0LTIuMTYtMi42ODgtMy4yMzktNC4wMzJjMC4wNC0wLjAzOSwwLjA4NS0wLjA2NCwwLjEyMS0wLjExM2MwLjUyMi0wLjcxMiwxLjAzOS0xLjQyNiwxLjU1LTIuMTQ1ICAgIGMzLjQwMi00LjYyMyw2LjY4MS05LjM0Miw5LjUxMS0xNC4yOTJjMC4wNzgsMC42MTksMC4zOTQsMS4xNDIsMS4yMjYsMS41MDRjMC4xNDIsMC4wNjIsMC4zMDEsMC4wNzUsMC40NjMsMC4wNTggICAgYzAuMDA0LDAsMC4wMDYsMC4wMDEsMC4wMSwwLjAwMUMzMi41NDUsMjUuMzgyLDMzLjM2MSwyNS4zMzUsMzQuMzIxLDI1LjMyMXogTTMyLjgwMSw3LjMyNmMtMi45MjMsNS43MS01Ljg5LDExLjM5Ni04Ljk5NSwxNy4wMDEgICAgYy0xLjAyNSwxLjgzMS0yLjA0OSwzLjY1Mi0zLjEwNiw1LjQyNmMtMC45MiwxLjU1LTEuODIyLDMuMTA5LTIuNzEzLDQuNjc2Yy0wLjQwMiwwLjY3Mi0wLjgwNSwxLjM0NS0xLjIxMywyLjAxNCAgICBjLTAuMDgzLDAuMTI2LTAuMTY4LDAuMjUyLTAuMjUyLDAuMzc4Yy0wLjQ5OS0wLjYyMS0wLjk5OC0xLjI0Mi0xLjQ5Ny0xLjg2M2MwLjAzMS0wLjAzNywwLjA2OS0wLjA1OCwwLjA5Ny0wLjEwMyAgICBjNi4wMDMtOS43MTUsMTEuOTI2LTE5LjQ4MiwxNy45MTMtMjkuMjA4QzMyLjk1OCw2LjIwNywzMi44NzksNi43NjcsMzIuODAxLDcuMzI2eiBNMTUuNDExLDMwLjkyMiAgICBjMi4wODUtMy42MjMsNC4xOTktNy4yMjYsNi4zODEtMTAuNzc5YzIuNDc2LTQuMDM0LDUuMDkyLTcuOTg0LDcuNTk3LTExLjk5NGMwLjI5My0wLjQ2OCwwLjI5NS0wLjQ2OSwwLjAwNiwwLjAwMiAgICBjLTQuNjYxLDcuNTktOS4yOTIsMTUuMTk4LTEzLjk1OCwyMi43ODdDMTUuMTQ2LDMxLjQwOCwxNS4xMzUsMzEuNDAxLDE1LjQxMSwzMC45MjJ6IE0zMy4xNDcsMS44NTMgICAgYzAuMDM0LDAuMDIxLDAuMDc0LDAuMDQsMC4xMDQsMC4wNjJjLTAuNjM3LDEuMDI0LTEuMjc1LDIuMDQ3LTEuOTEsMy4wNzJjLTAuMjkxLDAuNDctMC4yOTMsMC40NjktMC4wMDktMC4wMDUgICAgQzMxLjk1MiwzLjk0NywzMi41NTcsMi45MDQsMzMuMTQ3LDEuODUzeiBNMjUuMjAyLDUuMjkxYzAuNjA0LTEuMTg1LDEuMTk3LTIuMzc1LDEuNzgtMy41NjljMC4wMzktMC4wOCwwLjA0Ni0wLjE1MSwwLjA2LTAuMjI2ICAgIGMwLjM2Mi0wLjAyMiwwLjgwOS0wLjA1MiwxLjMwOS0wLjA3N2MtMC4wNywwLjA2NS0wLjE0NiwwLjEyOS0wLjIwMSwwLjE5OWMtMC45NDMsMS4yNDctMS44ODcsMi40OTYtMi44MTIsMy43NTYgICAgQzI1LjAwOCw1LjgxOCwyNC45NTEsNS43ODMsMjUuMjAyLDUuMjkxeiBNMjAuNDkxLDEuNjYyYzAuMDI5LTAuMDQ1LDAuMDMxLTAuMDg0LDAuMDUxLTAuMTI3YzEuNDgxLDAsMi45NjIsMCw0LjQ0NSwwICAgIGMtMC4wNDYsMC4wNjItMC4xMDEsMC4xMi0wLjEzMywwLjE4N2MtMi43OSw1Ljc1NC01Ljg1MywxMS4zNzgtOS4wMDgsMTYuOTU4Yy0wLjM1Mi0yLjUwMi0wLjcwMy01LjAwMy0xLjA1NC03LjUwNCAgICBDMTYuNjM1LDcuOTYyLDE4LjUxMyw0Ljc3NywyMC40OTEsMS42NjJ6IE0xNC4wNDIsNS44MzNjLTAuMDI5LTAuMjA4LTAuMDU4LTAuNDE1LTAuMDg3LTAuNjIyICAgIGMtMC4wNzItMC41MTEtMC4xODYtMS4wMDYtMC4yNzItMS40NmMwLjQzOS0wLjY5NywwLjg3OS0xLjM5NSwxLjMyMy0yLjA4OGMwLjAyNy0wLjA0MywwLjAzNS0wLjA4LDAuMDU2LTAuMTIxICAgIGMwLjA0NS0wLjAwMSwwLjA4My0wLjAwNiwwLjEyOS0wLjAwNmMwLjQzMiwwLDAuODY1LDAsMS4yOTcsMGMtMC4wNDIsMC4wNTQtMC4wOTQsMC4xMDQtMC4xMjUsMC4xNTkgICAgQzE1LjU5MywzLjA3NSwxNC44MTksNC40NTUsMTQuMDQyLDUuODMzeiBNMTQuMDU1LDI1LjQ0N2MxLjUwOC0wLjA1MSwyLjY3NS0wLjQ2MywyLjQ1NS0yLjAyOSAgICBjLTAuMDc4LTAuNTU4LTAuMTU3LTEuMTE1LTAuMjM1LTEuNjc0YzQuMzcyLTYuODk2LDkuMDM4LTEzLjYwNywxMy45NTItMjAuMTI1YzAuMDY1LTAuMDg2LDAuMDk1LTAuMTY0LDAuMTIyLTAuMjQyICAgIGMwLjM0OCwwLjAwNiwwLjY4NSwwLjAyMSwxLjAwNiwwLjA0OGMtMC4wNzcsMC4wODctMC4xNTIsMC4xNzctMC4yMDcsMC4yNzNDMjcsOS4yMDYsMjEuOTgzLDE2LjI1NywxNy41OTEsMjMuNjE4ICAgIGMtMS42NCwyLjc0OC0zLjI1LDUuNTE5LTQuODQyLDguM2MtMC4wMjQsMC4wNDMtMC4wMzIsMC4wOTYtMC4wNTEsMC4xNDJjLTAuNDc3LTAuNTk0LTAuOTU1LTEuMTg4LTEuNDMyLTEuNzgyICAgIGMwLjAyNy0wLjAzNSwwLjA2MS0wLjA1NSwwLjA4NS0wLjA5N2MwLjg5MS0xLjU0OSwxLjc4MS0zLjEsMi42NzMtNC42NDhDMTQuMDQzLDI1LjUwMiwxNC4wNDIsMjUuNDc3LDE0LjA1NSwyNS40NDd6IiBmaWxsPSIjOGY3YTU2IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPC9nPjwvc3ZnPg==" /></a>
+                </button>
+            </div>
+    </header>
+
+
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#dbc7b1" fill-opacity="1"
+            d="M0,192L48,213.3C96,235,192,277,288,272C384,267,480,213,576,192C672,171,768,181,864,202.7C960,224,1056,256,1152,266.7C1248,277,1344,267,1392,261.3L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+        </path>
+    </svg>
+    <section class="productos" id="productos">
+        <h2><i>Nuestros</i> PRODUCTOS</h2>
+        <div class="row">
+            <div class="col-md-4 col-sm-12 ">
+
+                <div class="profile-card-6"><img src="./img/ramo-100-rosas.jpg" class="img img-responsive">
+                    <div class="profile-name">ROSAS
+                    </div>
+
+                    <div class="profile-overview">
+                        <div class="profile-overview">
+                            <div class="row text-center">
+
+                                <div class="col-xs-4">
+                                    <button class="btn">Ver Mas</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="profile-card-6"><img src="./img/tulipanes.jpg" class="img img-responsive">
+                    <div class="profile-name">TULIPANES
+                    </div>
+
+                    <div class="profile-overview">
+                        <div class="profile-overview">
+                            <div class="row text-center">
+                                <div class="col-xs-4">
+                                    <button class="btn">Ver Mas</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="profile-card-6"><img src="./img/ramo-colores.jpg" class="img img-responsive">
+                    <div class="profile-name">Arreglos
+                        <br>Florales</div>
+
+                    <div class="profile-overview">
+                        <div class="profile-overview">
+                            <div class="row text-center">
+                                <div class="col-xs-4">
+                                    <button class="btn">Ver Mas</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#DBC7B1" fill-opacity="1"
+            d="M0,128L48,133.3C96,139,192,149,288,154.7C384,160,480,160,576,181.3C672,203,768,245,864,234.7C960,224,1056,160,1152,128C1248,96,1344,96,1392,96L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+    </svg>
+
+    <section class="about" id="sobre-nosotros">
+        <div class="about_row">
+            <h2><i>Sobre</i> NOSOTROS</h2>
+            <div class="about_content">
+
+                <p class="about_content-descrition"><i>Somos una empresa fundada en 1987, en la ciudad de México,
+                        estamos enfocados en alegrar los momentos
+                        especiales de las personas, con nuestras hermosas flores naturales. </i></p>
+                <p><i></i></p>
+                <div class="about_icons">
+                    <div class="about_icons-text">
+                        <img
+                            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQ4OS40IDQ4OS40IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj48Zz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KCTxnPgoJCTxwYXRoIGQ9Ik0zNDcuNywyNjMuNzVoLTY2LjVjLTE4LjIsMC0zMywxNC44LTMzLDMzdjUxYzAsMTguMiwxNC44LDMzLDMzLDMzaDY2LjVjMTguMiwwLDMzLTE0LjgsMzMtMzN2LTUxICAgIEMzODAuNywyNzguNTUsMzY1LjksMjYzLjc1LDM0Ny43LDI2My43NXogTTM1Ni43LDM0Ny43NWMwLDUtNC4xLDktOSw5aC02Ni41Yy01LDAtOS00LjEtOS05di01MWMwLTUsNC4xLTksOS05aDY2LjUgICAgYzUsMCw5LDQuMSw5LDlWMzQ3Ljc1eiIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiI+PC9wYXRoPgoJCTxwYXRoIGQ9Ik00ODkuNCwxNzEuMDVjMC0yLjEtMC41LTQuMS0xLjYtNS45bC03Mi44LTEyOGMtMi4xLTMuNy02LjEtNi4xLTEwLjQtNi4xSDg0LjdjLTQuMywwLTguMywyLjMtMTAuNCw2LjFsLTcyLjcsMTI4ICAgIGMtMSwxLjgtMS42LDMuOC0xLjYsNS45YzAsMjguNywxNy4zLDUzLjMsNDIsNjQuMnYyMTEuMWMwLDYuNiw1LjQsMTIsMTIsMTJoNjYuM2MwLjEsMCwwLjIsMCwwLjMsMGg5M2MwLjEsMCwwLjIsMCwwLjMsMGgyMjEuNCAgICBjNi42LDAsMTItNS40LDEyLTEydi0yMDkuNmMwLTAuNSwwLTAuOS0wLjEtMS4zQzQ3MiwyMjQuNTUsNDg5LjQsMTk5Ljg1LDQ4OS40LDE3MS4wNXogTTkxLjcsNTUuMTVoMzA1LjlsNTYuOSwxMDAuMUgzNC45ICAgIEw5MS43LDU1LjE1eiBNMzQ4LjMsMTc5LjE1Yy0zLjgsMjEuNi0yMi43LDM4LTQ1LjQsMzhjLTIyLjcsMC00MS42LTE2LjQtNDUuNC0zOEgzNDguM3ogTTIzMiwxNzkuMTVjLTMuOCwyMS42LTIyLjcsMzgtNDUuNCwzOCAgICBzLTQxLjYtMTYuNC00NS41LTM4SDIzMnogTTI0LjgsMTc5LjE1aDkwLjljLTMuOCwyMS42LTIyLjgsMzgtNDUuNSwzOEM0Ny41LDIxNy4yNSwyOC42LDIwMC43NSwyNC44LDE3OS4xNXogTTIwMS42LDQzNC4zNWgtNjkgICAgdi0xMjkuNWMwLTkuNCw3LjYtMTcuMSwxNy4xLTE3LjFoMzQuOWM5LjQsMCwxNy4xLDcuNiwxNy4xLDE3LjF2MTI5LjVIMjAxLjZ6IE00MjMuMyw0MzQuMzVIMjI1LjZ2LTEyOS41ICAgIGMwLTIyLjYtMTguNC00MS4xLTQxLjEtNDEuMWgtMzQuOWMtMjIuNiwwLTQxLjEsMTguNC00MS4xLDQxLjF2MTI5LjZINjZ2LTE5My4zYzEuNCwwLjEsMi44LDAuMSw0LjIsMC4xICAgIGMyNC4yLDAsNDUuNi0xMi4zLDU4LjItMzFjMTIuNiwxOC43LDM0LDMxLDU4LjIsMzFzNDUuNS0xMi4zLDU4LjItMzFjMTIuNiwxOC43LDM0LDMxLDU4LjEsMzFjMjQuMiwwLDQ1LjUtMTIuMyw1OC4xLTMxICAgIGMxMi42LDE4LjcsMzQsMzEsNTguMiwzMWMxLjQsMCwyLjctMC4xLDQuMS0wLjFMNDIzLjMsNDM0LjM1TDQyMy4zLDQzNC4zNXogTTQxOS4yLDIxNy4yNWMtMjIuNywwLTQxLjYtMTYuNC00NS40LTM4aDkwLjkgICAgQzQ2MC44LDIwMC43NSw0NDEuOSwyMTcuMjUsNDE5LjIsMjE3LjI1eiIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiI+PC9wYXRoPgoJPC9nPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjwvZz48L3N2Zz4=" />
+                        <p>Estamos ubicados en:</p>
+                        <p>calle Juan Iturbide #321-D,Hacienda San Román, Ciudad de México</p>
+
+                    </div>
+                    <div class="about_icons-text">
+                        <img
+                            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMy42NCA1MTMuNjQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGc+CgkJPHBhdGggZD0iTTQ5OS42NiwzNzYuOTZsLTcxLjY4LTcxLjY4Yy0yNS42LTI1LjYtNjkuMTItMTUuMzU5LTc5LjM2LDE3LjkyYy03LjY4LDIzLjA0MS0zMy4yOCwzNS44NDEtNTYuMzIsMzAuNzIgICAgYy01MS4yLTEyLjgtMTIwLjMyLTc5LjM2LTEzMy4xMi0xMzMuMTJjLTcuNjgtMjMuMDQxLDcuNjgtNDguNjQxLDMwLjcyLTU2LjMyYzMzLjI4LTEwLjI0LDQzLjUyLTUzLjc2LDE3LjkyLTc5LjM2bC03MS42OC03MS42OCAgICBjLTIwLjQ4LTE3LjkyLTUxLjItMTcuOTItNjkuMTIsMGwtNDguNjQsNDguNjRjLTQ4LjY0LDUxLjIsNS4xMiwxODYuODgsMTI1LjQ0LDMwNy4yYzEyMC4zMiwxMjAuMzIsMjU2LDE3Ni42NDEsMzA3LjIsMTI1LjQ0ICAgIGw0OC42NC00OC42NEM1MTcuNTgxLDQyNS42LDUxNy41ODEsMzk0Ljg4LDQ5OS42NiwzNzYuOTZ6IiBmaWxsPSIjZmZmZmZmIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIj48L3BhdGg+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPC9nPjwvc3ZnPg==" />
+                        <p>Nuestros Telefonos:</p>
+                        <p>+525565548600 -
+                            +525549812714</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contacto">
+        <h2>CONTACTANOS</h2>
+        <div class="row contactanos " id="contactanos">
+            <div class="col col-md-5 col-sm-12 formulario">
+                <form>
+                    <h3>Dejanos un mensaje</h3>
+                    <div class="mb-3">
+                        <label for="full_name_id" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="full_name_id" name="full_name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPhone1" class="form-label">Telefono</label>
+                        <input type="phone" class="form-control" id="exampleInputPhone1">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+            <div class="col col-md-3 col-sm-5 contactanos_redes">
+                <div class="row">
+
+                    <div class="col col-md-3 col-sm-5 contactanos_redes-img">
+                        <img src="./img/woman-6020525_960_720.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#dbc7b1" fill-opacity="1"
+            d="M0,192L48,202.7C96,213,192,235,288,240C384,245,480,235,576,224C672,213,768,203,864,197.3C960,192,1056,192,1152,202.7C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+    </svg>
+    <footer>
+
+        <div class="contactanos_redes-text">
+            <div>
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGc+CgkJPHBhdGggZD0iTTQ2Nyw2MUg0NUMyMC4yMTgsNjEsMCw4MS4xOTYsMCwxMDZ2MzAwYzAsMjQuNzIsMjAuMTI4LDQ1LDQ1LDQ1aDQyMmMyNC43MiwwLDQ1LTIwLjEyOCw0NS00NVYxMDYgICAgQzUxMiw4MS4yOCw0OTEuODcyLDYxLDQ2Nyw2MXogTTQ2MC43ODYsOTFMMjU2Ljk1NCwyOTQuODMzTDUxLjM1OSw5MUg0NjAuNzg2eiBNMzAsMzk5Ljc4OFYxMTIuMDY5bDE0NC40NzksMTQzLjI0TDMwLDM5OS43ODh6ICAgICBNNTEuMjEzLDQyMWwxNDQuNTctMTQ0LjU3bDUwLjY1Nyw1MC4yMjJjNS44NjQsNS44MTQsMTUuMzI3LDUuNzk1LDIxLjE2Ny0wLjA0NkwzMTcsMjc3LjIxM0w0NjAuNzg3LDQyMUg1MS4yMTN6IE00ODIsMzk5Ljc4NyAgICBMMzM4LjIxMywyNTZMNDgyLDExMi4yMTJWMzk5Ljc4N3oiIGZpbGw9IiNhNTkzN2YiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD4KCTwvZz4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8L2c+PC9zdmc+"
+                    style="width: 20px;" />
+                <p>lafloreria@example.com</p>
+            </div>
+
+            <div>
+                <img src="./img/icons/facebook.png" alt="" style="width: 20px;">
+                <p> la floreria oficial</p>
+            </div>
+            <div>
+                <img src="./img/icons/instagram.png" alt="" style="width: 20px;">
+                <p> @la floreria oficial</p>
+            </div>
+            <div>
+                <img src="./img/icons/whatsapp.png" alt="" style="width: 20px;">
+                <p>+525543829189</p>
+            </div>
+        </div>
+        <small class="autor">Copyright Abraham Torres</small>
+    </footer>
+
+</body>
+
+
+
+</html>
