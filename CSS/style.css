@@ -242,8 +242,8 @@ backdrop-filter: blur( 8px );
 -webkit-backdrop-filter: blur( 1.5px );
 border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
-animation-name: imagen;
-animation-duration: 3s;
+/* animation-name: imagen;
+animation-duration: 3s; */
 }
 
 .about_row h2{
@@ -307,8 +307,8 @@ animation-duration: 3s;
 
 .contactanos_redes .row .contactanos_redes-img img{
     width: 450px ;
-    animation-name: imagen;
-    animation-duration: 2s;
+    /* animation-name: imagen;
+    animation-duration: 2s; */
 }
 
 @keyframes imagen{
