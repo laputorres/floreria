@@ -41,11 +41,21 @@ h2 i {
 
 header .navbar {
     background: #dbc7b1 !important;
+    width: 100%;
     
 }
 
+.container-fluid .flex-grow-1{
+    width: 20%;
+    margin: 0;
+}
+
+.container-fluid .flex-grow-1 img{
+    width: 50%;
+}
+
 .navbar a{
-    color: #fff !important;
+    color:#807264!important;
 }
 
 
@@ -141,6 +151,10 @@ header .navbar {
 /* PRODUCTOS */
 .productos{
     margin-top: 0px;
+}
+
+.productos .row {
+    width: 100%;
 }
 
 
@@ -289,17 +303,32 @@ animation-duration: 3s; */
    margin-left: 10%;
 }
 
+.contacto .row{
+    margin: 0;
+}
+
 .contacto h2{
     margin: 5% 0;
 }
 
 .formulario{
  border: solid #dbc7b1;
+ color: #807264;
  padding: 5%;
+ border-radius: 5%;
+ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.contactanos_redes{
+.formulario .mb-3{
+    width: 70%;
     margin: auto;
+    padding: auto;
+}
+
+
+
+.contactanos_redes{
+    margin: 0;
     font-size: 5vh;
     color: #dbc7b1;
     
@@ -308,17 +337,20 @@ animation-duration: 3s; */
 
 
 .contactanos_redes .row .contactanos_redes-img img{
-    width: 450px ;
+    width: 550px ;
     animation-name: imagen;
-    animation-duration: 2s;
+    animation-duration: 5s;
+    
 }
+
+
 
 @keyframes imagen{
     from{
-       opacity: 100%;
+       opacity: 0;
     }
     to{
-        opacity: 0;
+        opacity: 100%;
     }
 }
 
@@ -369,10 +401,14 @@ footer .contactanos_redes-text{
 
 footer .autor{
         text-align: right;
+        margin: auto;
+        padding-right: 5%;
+        color: #FFF;
     }
 
 footer .contactanos_redes-text p{
     padding-bottom: 10px;
+    color: #807264;
 }
 
 
@@ -382,6 +418,67 @@ footer .contactanos_redes-text p{
 
 
 /* RESPONSIVE DESIGN */
+
+@media only screen and (max-width:1000px) {
+    .container-fluid .flex-grow-1 img{
+        width: 20%;
+    }
+
+
+
+}
+
+
+@media only screen and (max-width:800px)  {
+
+    .container-fluid .flex-grow-1 img{
+        width: 25%;
+    }
+
+    .grid{
+        display: flex;
+        background-position: center;
+        background: url(../img/flower-watercolor-png.png);
+    }
+
+    .grid button{
+        width: 20%;
+    }
+
+
+    .about{
+        height: 120%;
+    }
+
+    .about_icons{
+        display: flex;
+    }
+
+    .about_content{
+        display: block;
+    }
+    .about_content-descrition{
+        width: 100% !important;
+        text-align:justify;
+    }
+
+    .about_icons-text{
+        width: 100%;
+        
+        text-align: center;
+    }
+
+    .contactanos_redes{
+        margin: 0;
+        font-size: large;
+    }
+
+    .contactanos_redes .row .contactanos_redes-img img {
+        display: none;
+    }
+
+}
+
 
 @media only screen and (max-width:600px)  {
 
@@ -431,56 +528,23 @@ footer .contactanos_redes-text p{
      .contactanos_redes{
          display: none;
      }
-}
 
-
-.container-fluid .flex-grow-1{
-    width: 70%;
-}
-
-
-
-@media only screen and (max-width:800px)  {
-    .grid{
-        display: flex;
-        background-position: center;
-        background: url(../img/flower-watercolor-png.png);
+     .container-fluid .flex-grow-1{
+        width: 80%;
     }
 
-    .grid button{
-        width: 20%;
-    }
-
-
-    .about{
-        height: 120%;
-    }
-
-    .about_icons{
-        display: flex;
-    }
-
-    .about_content{
-        display: block;
-    }
-    .about_content-descrition{
-        width: 100% !important;
-        text-align:justify;
-    }
-
-    .about_icons-text{
-        width: 100%;
+    .container-fluid .flex-grow-1 img{
+        width: 50%;
         
-        text-align: center;
-    }
-
-    .contactanos_redes{
-        margin: 0;
-        font-size: large;
-    }
-
-    .contactanos_redes .row .contactanos_redes-img img {
-        display: none;
     }
 
 }
+
+
+
+
+
+
+
+
+
