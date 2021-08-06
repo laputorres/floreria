@@ -215,6 +215,14 @@ header .navbar {
     font-weight: bold;
 }
 
+.profile-card-6 .profile-overview .btn {
+    color: #807264;
+}
+
+.profile-card-6 .profile-overview .btn:hover{
+    background: #b6a695;
+}
+
 .profile-card-6 .profile-overview p {
     color: rgba(255, 255, 255, 0.7);
 }
