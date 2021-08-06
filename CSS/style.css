@@ -222,6 +222,8 @@ header .navbar {
     padding-bottom: 25px;
 }
 
+/*  SOBRE NOSOTROS */
+
 .about{
     background: #dbc7b1;
     background-image: url(../img/fondo-flores.png);
@@ -259,7 +261,7 @@ animation-duration: 3s; */
     display: flex;
 }
 
-.about_content-descrition{
+.about_content-description{
     padding: 0 5%;
     font-size: 5vh;
     width: 100%;
@@ -307,16 +309,16 @@ animation-duration: 3s; */
 
 .contactanos_redes .row .contactanos_redes-img img{
     width: 450px ;
-    /* animation-name: imagen;
-    animation-duration: 2s; */
+    animation-name: imagen;
+    animation-duration: 2s;
 }
 
 @keyframes imagen{
     from{
-        transform: translateX(100%);
+       opacity: 100%;
     }
     to{
-        transform: translateX(0%);
+        opacity: 0;
     }
 }
 
@@ -382,6 +384,63 @@ footer .contactanos_redes-text p{
 /* RESPONSIVE DESIGN */
 
 @media only screen and (max-width:600px)  {
+
+    .about_content-description{
+        padding: 0 5%;
+        font-size: 3vh;
+        text-align: justify;
+        width: 100%;
+        color: rgb(29, 15, 15);
+    }
+    .grid__title {
+        font-size: 6rem;
+        margin-right: 25vh;
+        color: #807264;
+        font-family: 'MonteCarlo', cursive;
+    }
+    
+    .grid__title--transform {
+        font-family: 'Playfair Display', serif;
+        font-size: 2.5rem;
+        transform: translate(20%);
+        animation: move 1s 2s forwards;
+    
+    }
+
+    .grid button {
+    grid-row: 1/1;
+    grid-column: 7/8;
+    width: 10%;
+    margin: auto;
+    margin-top: 5% ;
+    margin-left: 40%;
+    z-index: 3;
+    }
+
+    .contacto {
+        margin: 0 5% 0 5%;
+        
+     }
+
+     
+
+     .contacto_img {
+         display: none;
+     }
+
+     .contactanos_redes{
+         display: none;
+     }
+}
+
+
+.container-fluid .flex-grow-1{
+    width: 70%;
+}
+
+
+
+@media only screen and (max-width:800px)  {
     .grid{
         display: flex;
         background-position: center;
