@@ -294,6 +294,7 @@ animation-duration: 3s; */
     width: 30%;
     color: rgb(73, 69, 69);
     text-align: center;
+    text-decoration: none;
     font-size: large;
     margin: auto;
 }
@@ -419,7 +420,10 @@ footer .contactanos_redes-text p{
     color: #807264;
 }
 
-
+footer .contactanos_redes-text .tel{
+    text-decoration: none;
+    
+}
 
 
 
