@@ -281,6 +281,7 @@ animation-duration: 3s; */
 
 .about_icons{
     display: flex;
+    align-items: flex-start;
 }
 
 .about_content-description{
